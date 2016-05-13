@@ -1,0 +1,41 @@
+<ion-scroll class="padding"  ng-controller="getUsers">
+     <div class="button-bar">
+		
+			<button class="button button-full button-balanced" style="width: 100%" >
+	        	Nuevo Contacto
+	      	</button>
+		
+	
+			<button class="button button-full button-assertive" ui-sref="index" style="width: 100%">
+	        	Salir
+	      	</button>
+		
+	</div>
+      
+
+     <ion-list ng-repeat="allUsers in data">
+     <ion-item class="icon" ng-repeat="user in allUsers.users">
+	     <div class="row">
+
+			<div class="col-md-3">
+				<a class="button button-icon icon ion-person-stalker"></a>
+			</div>
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-6">
+				<h2>ID: <b>{{user.id}}</b></h2>
+	    		<h3>Nombre: <b>{{user.nombre}}</b></h3>
+	    		<h3>Direccion: <b>{{user.direccion}}</b></h3>
+			</div>
+			<div class="col-md-2">
+				<button class="button icon ion-gear-a activated" title="Editar"></button>
+			</div>
+			
+	  	</div>
+		  
+	   
+	  </ion-item>
+	</ion-list>
+
+
+</ion-scroll>
