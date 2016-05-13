@@ -14,19 +14,24 @@ For example, to start a new Ionic project with the default tabs interface, make 
 ```bash
 $ npm install -g ionic
 ```
-##  Run the project 
-```bash
-$ cd demoIonic/
-$ ionic serve
-```
 
 Then run a aplication DEMO: 
 
 ```bash
 $ ionic start myProject tabs
 ```
-
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
+
+
+##  Run this project 
+```bash
+$ cd demoIonic/
+$ ionic serve
+```
+
+
+
+
 
 
 
